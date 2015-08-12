@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "node server"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"cookie-parser": "latest",
 		"etsy-js": "latest",
 		"express": "latest",
