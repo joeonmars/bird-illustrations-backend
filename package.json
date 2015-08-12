@@ -1,0 +1,21 @@
+{
+	"name": "world-of-birds",
+	"version": "0.0.1",
+	"private": true,
+	"description": "The oAuth backend for World of Birds.",
+	"scripts": {
+		"start": "node server"
+	},
+	"devDependencies": {
+		"cookie-parser": "latest",
+		"etsy-js": "latest",
+		"express": "latest",
+		"express-session": "latest",
+		"socket.io": "latest"
+	},
+	"author": "joe-zhou",
+	"engines": {
+		"node": "0.12.x",
+		"npm": "1.2.x"
+	}
+}
