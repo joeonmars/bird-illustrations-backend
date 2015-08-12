@@ -11,8 +11,7 @@
 		"etsy-js": "latest",
 		"express": "latest",
 		"express-session": "latest",
-		"socket.io": "latest",
-		"oauth": "latest"
+		"socket.io": "latest"
 	},
 	"author": "joe-zhou",
 	"engines": {
