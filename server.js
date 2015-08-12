@@ -5,22 +5,25 @@ var url = require( 'url' );
 var etsyjs = require( 'etsy-js-heroku' ); //https://github.com/GeorgiCodes/etsy-js
 var socketio = require( 'socket.io' );
 
+//lunalovebird@hotmail.com
+//zhaoying2015
 
-/*
-var client = etsyjs.client( {
-	key: 'w6ramnbxy2q8vbg73f4cvraq',
-	secret: 'bgijd4jori',
-	callbackURL: 'http://localhost:5000/authorise'
-} );
-*/
+// Heroku
+var herokuSettings = {
+	key: 'dkkwbk898imerwktc53h0uj6',
+	secret: 'i24ijqayvw',
+	callbackURL: 'https://world-of-birds.herokuapp.com/authorise'
+};
 
-var client = etsyjs.client( {
+// Local
+var localSettings = {
 	key: '31g6lvujf5sqq2x6pc37uy98',
 	secret: 'm8c8aqbjtf',
 	callbackURL: 'http://localhost:5000/authorise'
-} );
-//lunalovebird@hotmail.com
-//zhaoying2015
+};
+
+var clientSettings = ( process.env.SERVER === 'production' ) ? herokuSettings : localSettings;
+var client = etsyjs.client( clientSettings );
 
 client.etsyOAuth._requestUrl += '%20' + 'listings_r' + '%20' + 'cart_rw';
 
