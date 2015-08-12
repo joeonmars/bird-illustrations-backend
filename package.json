@@ -8,7 +8,7 @@
 	},
 	"dependencies": {
 		"cookie-parser": "latest",
-		"etsy-js": "latest",
+		"etsy-js-heroku": "latest",
 		"express": "latest",
 		"express-session": "latest",
 		"socket.io": "latest"

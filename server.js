@@ -2,7 +2,7 @@ var express = require( 'express' )
 var session = require( 'express-session' )
 var cookieParser = require( 'cookie-parser' )
 var url = require( 'url' );
-var etsyjs = require( 'etsy-js' ); //https://github.com/GeorgiCodes/etsy-js
+var etsyjs = require( 'etsy-js-heroku' ); //https://github.com/GeorgiCodes/etsy-js
 var socketio = require( 'socket.io' );
 
 
