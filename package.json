@@ -15,7 +15,7 @@
 	},
 	"author": "joe-zhou",
 	"engines": {
-		"node": "0.12.x",
-		"npm": "1.2.x"
+		"node": "0.12.2",
+		"npm": "2.7.4"
 	}
 }
